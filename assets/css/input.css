@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply h-screen flex flex-col gap-9 justify-center items-center;
+  background: #654ea3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eaafc8,
+    #654ea3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #eaafc8,
+    #654ea3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.wrapper {
+  @apply h-[350px] w-fit p-12 rounded-3xl shadow-slate-800 flex flex-col gap-12 justify-center items-center bg-white;
+}
+.buttons {
+  @apply flex flex-row gap-8;
+}
+h1 {
+  @apply text-[#7d7d7d] font-extrabold text-xl;
+}
+.btn {
+  @apply bg-[#EA4C89] hover:bg-[#f47ba9] hover:duration-300 hover:ease-in focus:bg-[#F082AC] cursor-pointer rounded-lg w-36 h-12 text-white hover:text-sm font-bold shadow-md uppercase shadow-slate-300 duration-300 ease-out;
+}
